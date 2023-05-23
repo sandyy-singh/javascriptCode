@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+
+      .container {
+        display: flex;
+        align-items: center;
+        background-color: darkslategray;
+        color:wheat;
+        
+      }
+
+      .container1 {
+        display: flex;
+        padding: 15px;
+      }
+      .a1{
+        padding: 5px;
+      }
+      h1:hover{
+        color: black;
+      }
+      .a1:hover{
+        color: black;
+      }
+
+      h1{
+       margin: auto;
+      }
+    </style>
+  </head>
+  <body>
+
+<header class="container">
+    <div class="container1">
+        <div class="a1">home</div>
+        <div class="a1">About</div>
+        <div class="a1">Contact</div>
+    </div>
+    <h1>Sandeep Singh</h1>
+    <div class="container1">
+        <div class="a1">home</div>
+        <div class="a1">About</div>
+        <div class="a1">Contact</div>
+    </div>
+
+
+ 
+</header>
+
+sub1
+<input type="number" id="a1">
+sub1
+<input type="number" id="a2">
+sub4
+<input type="number" id="a3">
+sub4
+<input type="number" id="a4">
+
+<button onclick="getvalue()">add</button>
+
+result
+<input type="text" readonly id="a4">
+
+<script>
+ let result,percenrt;
+
+function total(a,b,c,d,){
+
+  return  total =a+b+c+d;
+
+
+}
+
+function getvalue(){
+
+  
+  let aa =parseInt(document.getElementById('a1').value) ;
+  let bb = parseInt(document.getElementById('a2').value);
+  let cc =parseInt(document.getElementById('a3').value) ;
+  let dd =parseInt( document.getElementById('a4').value);
+
+  result = total(aa,bb,cc,dd);
+   let percenrt1 = finalresult(result)
+
+  alert(percenrt1)
+}
+
+function finalresult (total1){
+  
+  return percenrt =(total1/400)*100;
+}
+
+
+</script>
+  </body>
+</html>
